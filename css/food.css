@@ -61,7 +61,7 @@ li a {
     display: flex;
     flex-direction: row;
     color: #952323;
-    text-align: center;
+    text-align: left;
     padding: 14px 14px;
     text-decoration: none;
     font-size: 17px;
