@@ -143,17 +143,6 @@ article {
 
 }
 
-.smallpic {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 522px;
-    height: 384.473px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    border: 7px solid #952323;
-
-}
-
 .semiheading {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -166,11 +155,23 @@ article {
     line-height: 30px;
 }
 
+.smallpic {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 522px;
+    height: 384.473px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 7px solid #952323;
+
+}
+
+
+
 .smallpictext {
     margin-bottom: 50px;
-    width: 501px;
-    height: 139px;
-    flex-shrink: 0;
+    
+    
     color: #000;
     text-align: center;
     font-family: Century Gothic;
@@ -248,4 +249,22 @@ footer {
     width: 69px;
     height: 69px;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 5px;
+    }
+    article, ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: none;
+    }
+    .topbar input {
+        display: none;
+    }
+    
 }
