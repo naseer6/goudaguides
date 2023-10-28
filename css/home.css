@@ -84,7 +84,7 @@ li a:hover {
     justify-content: center;
     flex-shrink: 0;
     color: #952323;
-    text-align: justify;
+    text-align: left;
     font-family: Century Gothic;
     font-size: 73px;
     font-style: normal;
@@ -101,7 +101,7 @@ li a:hover {
     margin-right: 5px;
     flex-shrink: 0;
     color: #000;
-    text-align: justify;
+    text-align: left;
     font-family: Century Gothic;
     font-size: 22px;
     font-style: normal;
