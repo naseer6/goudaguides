@@ -10,7 +10,8 @@
 
 /* Body Styles */
 body {
-    
+    margin-left: 10px;
+    margin-right: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -238,7 +239,7 @@ footer {
 
 /* Copyrights Styles */
 .copyrights {
-    margin-top: 3.125em;
+    
     text-align: center;
     color: #952323;
     font-size: 1.125em;
@@ -261,6 +262,25 @@ footer {
     width: 4.3125em;
     height: 4.3125em;
     border-radius: 50%;
+}
+.formfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.formfooter label {
+    color: #952323;
+    margin-bottom: 10px;
+}
+
+.formfooter input {
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
 /* Responsive Styles */
