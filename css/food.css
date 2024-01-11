@@ -115,7 +115,6 @@ li a:hover {
     color: white;
 }
 
-/* Main Heading Styles */
 .mainheading {
     color: #952323;
     text-align: left;
@@ -156,16 +155,17 @@ li a:hover {
 
 article {
     display: flex;
+    flex-direction: column;
     flex-shrink: 0;
     align-items: center;
-    padding-bottom: 50px;
+    justify-content: space-between;
 }
 
 .semiheading {
     margin-top: 10px;
     margin-bottom: 10px;
     color: #952323;
-    text-align: left;
+    text-align: center;
     font-family: Century Gothic;
     font-size: 26px;
     font-style: normal;
@@ -174,125 +174,24 @@ article {
 }
 
 
-
 .smallpic {
-
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 780px;
-    height: 450px;
-    flex-shrink: 0;
+    margin: 0.625em;
+    width: 100%;
+    max-width: 32.625em;
+    height: auto;
     border-radius: 12px;
     border: 5px solid #952323;
-
-
+    
+    
 }
 
 
 
 .smallpictext {
-    padding-bottom: 15px;
-    padding-left: 15px;
-
-    width: 376px;
-    height: 406px;
-    flex-shrink: 0;
     margin-bottom: 50px;
-    flex-shrink: 0;
-    color: #000;
-    text-align: left;
-    font-family: Century Gothic;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-.semiheading2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    color: #952323;
-    text-align: right;
-    font-family: Century Gothic;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-}
-
-.smallpic2 {
-
-    text-align: right;
     
-    margin-bottom: 10px;
-    width: 755px;
-    height: 554px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    border: 5px solid #952323;
-
-
-}
-
-
-
-.smallpictext2 {
-    padding-top: 10px;
-    padding-right: 15px;
-    width: 376px;
-    flex-shrink: 0;
-    margin-bottom: 50px;
-    flex-shrink: 0;
     color: #000;
-    text-align: right;
-    font-family: Century Gothic;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-.semiheading3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #952323;
-    text-align: left;
-    font-family: Century Gothic;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-}
-
-.smallpic3 {
-
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 780px;
-    height: 450px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    border: 5px solid #952323;
-
-
-}
-
-
-
-.smallpictext3 {
-    padding-bottom: 15px;
-    padding-left: 15px;
-
-    width: 376px;
-    height: 406px;
-    flex-shrink: 0;
-    margin-bottom: 50px;
-    flex-shrink: 0;
-    color: #000;
-    text-align: left;
+    text-align: center;
     font-family: Century Gothic;
     font-size: 22px;
     font-style: normal;

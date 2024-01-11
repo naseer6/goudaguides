@@ -126,6 +126,17 @@ li a:hover {
     margin-bottom: 10px;
 }
 
+/* Main Heading Styles */
+.mainheading {
+    color: #952323;
+    text-align: left;
+    font-size: 4.56em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* First Text Styles */
 .firsttext {
     margin: 0 0.3125em;
@@ -156,6 +167,7 @@ li a:hover {
 
 article {
     display: flex;
+    flex-direction: column;
     flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
@@ -173,18 +185,12 @@ article {
     line-height: 30px;
 }
 
-aside, #smallpic{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .smallpic {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 700px;
-    height: 430px;
-    flex-shrink: 0;
+    margin: 0.625em;
+    width: 100%;
+    max-width: 32.625em;
+    height: auto;
     border-radius: 12px;
     border: 5px solid #952323;
     
@@ -195,7 +201,7 @@ aside, #smallpic{
 
 .smallpictext {
     margin-bottom: 50px;
-    flex-shrink: 0;
+    
     color: #000;
     text-align: center;
     font-family: Century Gothic;

@@ -9,10 +9,33 @@
     <title>Gouda Guides</title>
     <link rel="icon" type="image/jpg" href="img/flavicon_webdesign-02.png"/>
     <link rel="stylesheet" type="text/css" href="css/home.css">
-
+    
 </head>
 
 <body>
+
+    <section id="cookie-consent">
+        <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
+        <button onclick="acceptCookies()">Accept</button>
+        <button onclick="refuseCookies()">Refuse</button>
+    </section>
+    <script>
+        // Check if the user has already accepted cookies
+        if (localStorage.getItem('cookieConsent') !== 'accepted') {
+            document.getElementById('cookie-consent').classList.add('show');
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookie-consent').classList.remove('show');
+        }
+
+        function refuseCookies() {
+            // Implement your logic for refusing cookies
+            alert('Cookies refused');
+            document.getElementById('cookie-consent').classList.remove('show');
+        }
+    </script>
 
     <header>
         <section class="topbar">
