@@ -7,7 +7,7 @@
     <meta name="description" content="Gouda Guides - Your Ultimate Resource for Gouda City">
     <meta name="keywords" content="Gouda, travel, events, sports, food">
     <title>Gouda Guides</title>
-    <link rel="icon" type="image/jpg" href="img/flavicon_webdesign-02.png"/>
+    <link rel="icon" type="image/jpg" href="img/flavicon_webdesign-02.png">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     
 </head>
@@ -16,23 +16,9 @@
 
     <section id="cookie-consent">
         <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
-        <button onclick="acceptCookies()">Accept</button>
-        <button onclick="refuseCookies()">Refuse</button>
+        <button id="accept-btn">Accept</button>
+        <button id="refuse-btn">Refuse</button>
     </section>
-    <script>
-       
-
-        function acceptCookies() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            document.getElementById('cookie-consent').classList.remove('show');
-        }
-
-        function refuseCookies() {
-            // Implement your logic for refusing cookies
-            alert('Cookies refused');
-            document.getElementById('cookie-consent').classList.remove('show');
-        }
-    </script>
 
     <header>
         <section class="topbar">
@@ -141,6 +127,27 @@
         <p class="copyrights">&#169; 2023, Gouda Guides, The Netherlands. All Rights Reserved</p>
         
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cookiesMessage = document.getElementById('cookie-consent');
+            const acceptBtn = document.getElementById('accept-btn');
+            const refuseBtn = document.getElementById('refuse-btn');
+
+            acceptBtn.addEventListener('click', function () {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookiesMessage.style.display = 'none';
+            });
+
+            refuseBtn.addEventListener('click', function () {
+                // Implement your logic for refusing cookies
+                alert('Cookies refused');
+                cookiesMessage.style.display = 'none';
+            });
+
+            
+        });
+    </script>
 
 </body>
 
