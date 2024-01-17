@@ -1,5 +1,5 @@
 Student name: Naseer Ahmed Arsalan 
 Student number: 722589
 Student class: HAITFT1F
-GitHub Repository: https://github.com/naseer6/Web-Markup
+GitHub Repository: https://github.com/naseer6/goudaguides
 GitHub Pages URL: https://naseer6.github.io/goudaguides/

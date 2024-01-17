@@ -13,7 +13,11 @@
 
 
 <body>
-
+    <section id="cookie-consent">
+        <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
+        <button id="accept-btn">Accept</button>
+        <button id="refuse-btn">Refuse</button>
+    </section>
     <header>
         <section class="topbar">
             <img class="logo" src="img/Logo.png" alt="Website Logo">
@@ -128,7 +132,26 @@
     </footer>
 
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cookiesMessage = document.getElementById('cookie-consent');
+            const acceptBtn = document.getElementById('accept-btn');
+            const refuseBtn = document.getElementById('refuse-btn');
 
+            acceptBtn.addEventListener('click', function () {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookiesMessage.style.display = 'none';
+            });
+
+            refuseBtn.addEventListener('click', function () {
+                // Implement your logic for refusing cookies
+                alert('Cookies refused');
+                cookiesMessage.style.display = 'none';
+            });
+
+            
+        });
+    </script>
 
 </body>
 
