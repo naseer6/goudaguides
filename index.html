@@ -20,10 +20,7 @@
         <button onclick="refuseCookies()">Refuse</button>
     </section>
     <script>
-        // Check if the user has already accepted cookies
-        if (localStorage.getItem('cookieConsent') !== 'accepted') {
-            document.getElementById('cookie-consent').classList.add('show');
-        }
+       
 
         function acceptCookies() {
             localStorage.setItem('cookieConsent', 'accepted');
@@ -38,7 +35,7 @@
     </script>
 
     <header>
-        <section class="topbar">
+        <section h1 class="topbar">
             <img class="logo" src="img/Logo.png" alt="Website Logo">
             <img class="name" src="img/name.png" alt="Website name">
             <input type="text" placeholder="Search..">

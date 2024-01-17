@@ -163,6 +163,7 @@ li a:hover {
 
 article {
     display: flex;
+    flex-direction: column;
     flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
@@ -180,11 +181,7 @@ article {
     line-height: 30px;
 }
 
-aside, #smallpic{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .smallpic {
     text-align: center;
     margin-top: 10px;
